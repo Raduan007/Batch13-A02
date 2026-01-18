@@ -86,17 +86,24 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
  }
 .main-hero{
   position:relative;
+  width: 100%;
+   max-width: 350px;
 }
 .main-img{ 
- height: auto;
+    width: 100%;
+   height: auto;
     display: block;
 }
-.sec-img{ 
+.sec-hero{ 
     position: absolute;
    bottom: 80px;
   right: 115px;
-
 }
+.sec-img{
+ width: 100%;
+ height: auto;
+} 
+
 .hero-new{
   background-color: #00FF88;
   display: inline;
@@ -104,8 +111,8 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
  border-radius: 35px;
  font-weight: bold;
  position: absolute;
-   bottom: 290px;
-   right: 25px;
+   bottom: 230px;
+   left: 120px;
 }
 
 
@@ -142,9 +149,57 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 } 
 
 
+/* card-section */
+.about-section{
+      background-color: #1A0B2E;
+}
+.about-child-1{
+   
+        
+}
 
 
+ .about-banner{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    gap: 16px;
+     text-align: center;
+      margin-bottom: 80px;
+}
+ .about-banner h1{
+     font-style: Bold;
+    font-size: 46px;
+  
+} 
 
+.paragrapg-aliment{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    
+}
+  
+
+.about-child-2{
+    display: flex;
+    padding: 120px auto;
+     border-top: 1px solid #412567;
+   margin:0px  ;
+   padding-top: 80px;
+  
+}
+.post h1{
+    color: #00FF88;
+    font-size: 48px;
+   
+}
+.post h4{
+    color: #FFFFFF;
+    font-size: 16px;
+}
 
 
 
@@ -162,6 +217,10 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
         display: none;
     }
     .humburger{
+    display: inline;
+}
+/* card-section */
+.paragrapg-aliment{
     display: inline;
 }
 }
