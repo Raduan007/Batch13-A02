@@ -73,7 +73,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
  .hero-parent{  
       display: flex;
       flex-direction: column;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
       padding-top: 50px;
       gap: 40px;
  }
@@ -174,7 +174,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
  .about-banner h1{
      font-style: Bold;
-    font-size: 46px;
+    font-size: 48px;
   
 } 
 .about-banner p{
@@ -274,29 +274,47 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
      display: flex;
      flex-direction: column;
      color: white;
-
    }
+
 .fuatured-continer{
-  display: flex;    
-
- padding-top: 120px;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   
+ padding-top: 40px;
 }
+.fuatured-continer p{
+ opacity: 0.7;
+ padding: 12px 0px;
+}
+.fuatured-banner{
+    padding-top:100px;
+    font-size: 48px;
+   font-weight: bold;
+}
+
 .video-3 { 
      border-radius: 40px;
-    background-color: #250D44;
+ 
     background-size: cover;
 }
 .video-3 iframe{
 border-radius: 40px 40px 0px 0px;  
- 
+  
 }
 
 .text-3{
   color: white;
-  padding:0 10px;
-   
+  padding:0 30px;
+  margin: 0px 85px 0px 0px; 
+    background-color: #250D44;
+    border-radius: 0px 0px 40px 40px ; 
+
 }
+.clock-img {
+  display:inline-flex;
+  gap: 6px;
+  color: #00FF88;
+}
+
 
 
 
@@ -340,13 +358,23 @@ padding: 45px;
 
 }
 .child-alex-info{
-display: flex;
-flex-direction: column;
-justify-content: start;
 
 }
+.child-alex-info h1{
+    padding-bottom: 16px;
+}
 .info-icon{
- 
+
+  align-items:flex-end;
+  text-align: start;
+   gap: 8px;
+  padding: 16px;
+   
+}
+.info-icon img{
+   border: 1px solid #533C72;
+   border-radius: 50px;
+     padding: 8px;
 }
 
 /* footer-parent */
@@ -399,7 +427,15 @@ justify-content: start;
     grid-template-columns: repeat(2,1fr);
     margin: 0px;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
+ .about-banner h1{
+     font-style: Bold;
+    font-size: 28px;
+    padding-top: 40px;
+  
+} 
 
 /* grid-card-section */
 .card-parent{
@@ -407,14 +443,31 @@ justify-content: start;
 } 
  .card-section{
         padding:0px;
+        align-items: center;
+       
 }
 .card-1{
    padding-top: 120px;   
 }
 .card-head h1{
-    font-size: 38px;
+    font-size: 32px;
     padding-top: 40px;
     padding-bottom: 16px;
+}
+
+
+/* Featured-section */
+
+.fuatured-continer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.fuatured-continer{   
+ padding-top: 20px;
+}
+.fuatured-banner{
+    padding-top:40px;
+    font-size: 30px;
 }
 
 /* challenge-section */
@@ -429,6 +482,10 @@ padding: 25px;
 }
 .challenge-head{
     font-size: 2rem;
+}
+.child-alex-info{
+  display: flex;
+  flex-direction: column;
 }
  /* footer-part */
   .icon-parent{
@@ -485,5 +542,18 @@ padding: 25px;
 }
 .card-5{
     grid-column:span 1;
+}
+/* .fuatured-section */
+.fuatured-continer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* .challenge-section */
+.alex-parent{
+display: flex;
+flex-direction: column;
+gap: 24px;
+margin: 30px 20px;
+padding: 25px;
 }
 }
