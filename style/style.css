@@ -151,16 +151,18 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     border: 2px solid #00FF88;
 } 
 
-
+body{
+    background-color:#1A0B2E ;
+}
 /* about-section */
-.about-section{
-      background-color: #1A0B2E;
+.about-section{}
+
+.about-parent{
+  background-color: #1A0B2E;
 }
 .about-child-1{
-   
-        
+         
 }
-
 
  .about-banner{ 
     display: flex;
@@ -277,9 +279,11 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
    }
 
 .fuatured-continer{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);   
+  display: flex;
+  gap: 20px;
  padding-top: 40px;
+ margin: 0px 70px;
+flex-wrap: warp;
 }
 .fuatured-continer p{
  opacity: 0.7;
@@ -291,28 +295,58 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
    font-weight: bold;
 }
 
+.video-1 { 
+     border-radius: 40px;
+  background-color: #250D44;
+  width: 350px;
+}
+.video-1 iframe{
+border-radius: 40px 40px 0px 0px;  
+width: 350px;
+height: 200px;
+}
+
+.text-1{
+  color: white;
+  padding: 10px;
+}
+
+.video-2 { 
+     border-radius: 40px;
+  background-color: #250D44;
+  width: 350px;
+}
+.video-2 iframe{
+border-radius: 40px 40px 0px 0px;  
+width: 350px;
+height: 200px;
+}
+
+.text-2{
+  color: white;
+  padding: 10px;
+}
+
 .video-3 { 
      border-radius: 40px;
- 
-    background-size: cover;
+  background-color: #250D44;
+  width: 350px;
 }
 .video-3 iframe{
 border-radius: 40px 40px 0px 0px;  
-  
+width: 350px;
+height: 200px;
 }
 
 .text-3{
   color: white;
-  padding:0 30px;
-  margin: 0px 85px 0px 0px; 
-    background-color: #250D44;
-    border-radius: 0px 0px 40px 40px ; 
-
+  padding: 10px;
 }
+
 .clock-img {
-  display:inline-flex;
-  gap: 6px;
   color: #00FF88;
+  display: inline-flex;
+  gap: 6px;
 }
 
 
@@ -459,8 +493,8 @@ padding: 45px;
 /* Featured-section */
 
 .fuatured-continer{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+margin: 0px 10px;
 }
 .fuatured-continer{   
  padding-top: 20px;
