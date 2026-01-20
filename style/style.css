@@ -14,10 +14,7 @@
 } 
 /* header-part */
 .header{
-background-image: url('../assets/hero-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-background-position: center;
+
  
 }
 /* nav-part */
@@ -76,6 +73,10 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
       padding-bottom: 50px;
       padding-top: 50px;
       gap: 40px;
+      background-image: url('../assets/hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+background-position: center;
  }
 
  .hero-child-1{
@@ -83,11 +84,12 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
      display: flex;
     justify-content: center;
     align-items: center;
+  
  }
 .main-hero{
   position:relative;
   width: 100%;
-   max-width: 350px;
+   max-width: 340px;
 }
 .main-img{ 
     width: 100%;
@@ -97,7 +99,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 .sec-hero{ 
     position: absolute;
    bottom: 80px;
-  right: 115px;
+  right: 112px;
 }
 .sec-img{
  width: 100%;
@@ -111,7 +113,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
  border-radius: 35px;
  font-weight: bold;
  position: absolute;
-   bottom: 230px;
+   bottom: 225px;
    left: 120px;
 }
 
@@ -126,9 +128,9 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     gap: 24px;
     
 }
-.child-2-Tech{
-    font-size:60px;
-    color: #FFFFFF;
+.child-2-tech{
+    font-size:48px;
+    color: white;
 }
 .hero-child-2 p{
     opacity: 0.7;
@@ -430,7 +432,7 @@ padding: 45px;
 .icon-parent{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 35px;
 }
 .icon{
     display: flex;
@@ -451,6 +453,38 @@ padding: 45px;
     .humburger{
     display: inline;
 }
+
+
+/* nav-hero-section */
+.hero-parent{
+     background-image: url('../assets/hero-bg-small.png');
+}
+.hero-child-1{
+  position: relative;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+ }
+.main-hero{
+   padding-top: 30px;
+}
+.main-img{ 
+    width: 50%;
+}
+.sec-hero{ 
+   bottom: 40px;
+  right: 90px;
+}
+.sec-img{
+ width: 50%;
+} 
+
+.hero-new{
+   bottom: 100px;
+   left: 65px;
+}
+
 
 
 /* about-section */
@@ -529,7 +563,9 @@ padding: 25px;
 .footer-parent{
   align-items: center;
     gap: 20px;
-    padding: 30px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
+       background-image: url('../assets/footer-bg-small.png');
+    
 }
 
 }
