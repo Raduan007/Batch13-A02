@@ -42,12 +42,22 @@
 .nav-link{
     text-decoration: none;
  color: white;
+ transition: all 0.3s ease;
 }   
+.nav-item:hover{
+    font-size: 20px;
+}
 
 .h1-color{
     color: white;
      font-size: 32px;
+     cursor: pointer;
+      transition: all 0.3s ease;
+
 } 
+.h1-color:hover{
+    font-size: 42px;
+}
 
 
 .primary-btn{
@@ -59,6 +69,16 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     padding: 12px 20px;
     border-radius: 50px;
     color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.primary-btn:hover{
+    background: linear-gradient(
+    47.64deg,
+    #9100F8,
+    #FB09B4,
+    #F7E93F);
+     padding: 12px 25px;
 }
 
 .humburger{
@@ -115,6 +135,12 @@ background-position: center;
  position: absolute;
    bottom: 225px;
    left: 120px;
+   cursor: pointer;
+      transition: all 0.8s;
+}
+.hero-new:hover{
+  transform: rotate(360deg);
+  background-color: #E5E7EB   ;
 }
 
 
@@ -141,6 +167,7 @@ background-position: center;
 }
 
 
+
 .sec-btn{
   display: flex;
     justify-content: center;
@@ -151,7 +178,13 @@ background-position: center;
     color:#00FF88;
     background-color: transparent;
     border: 2px solid #00FF88;
+     cursor: pointer;
+      transition: all 0.3s;
 } 
+.sec-btn:hover{
+ background-color: #2A1348 ;
+ padding: 12px 25px;
+}
 
 body{
     background-color:#1A0B2E ;
@@ -205,12 +238,18 @@ body{
     display: flex;
     flex-direction: column;
     gap: 16px;
- 
-    text-align: center;
+   text-align: center;
+    
 }
+
 .post h1{
     color: #00FF88;
     font-size: 48px;
+      cursor: pointer;
+   transition: all 0.4s ease;
+}
+.post:hover h1{
+   font-size: 60px;
 }
 .post h4{
     color: #FFFFFF;
@@ -248,7 +287,9 @@ body{
     gap:200px;   
     margin: 12px;
     padding: 40px;
+    cursor: pointer;
 }
+
 
 .card-1{
     grid-row: span 2;
@@ -423,7 +464,7 @@ padding: 45px;
     background-position: center;
     color: white;
     gap: 32px;
-    padding: 120px;
+    padding: 140px 120px 120px;
 }
 .footer-parent h5{
     opacity: 0.7;
@@ -432,13 +473,14 @@ padding: 45px;
 .icon-parent{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
+    gap: 40px;
 }
 .icon{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
+
 }
 
 
@@ -474,15 +516,15 @@ padding: 45px;
 }
 .sec-hero{ 
    bottom: 40px;
-  right: 90px;
+  right: 83px;
 }
 .sec-img{
  width: 50%;
 } 
 
 .hero-new{
-   bottom: 100px;
-   left: 65px;
+   bottom: 90px;
+   left: 60px;
 }
 
 
